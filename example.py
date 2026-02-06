@@ -1,6 +1,13 @@
-'''
+"""
+docstring = docmentation that explain purpose of file
+triple quotes ~ comment
 The purpose of this file is to help students practice writing functions and using doctests.
-'''
+
+function = smt that starrts with def 
+things in the () is argument
+
+if inside the block then its the body of the function 
+"""
 
 
 def is_even(n):
@@ -9,6 +16,10 @@ def is_even(n):
 
     HINT:
     Use the modulus operator %
+    Any line tht starts with >>> is called "doctest"
+    # >>> is the prompt for python (if see >>> then think of python)
+    # $ is the prompt for the shell/terminal (if see $ ten think of terminal)
+
 
     >>> is_even(0)
     True
@@ -23,10 +34,17 @@ def is_even(n):
     >>> type(is_even(0))
     <class 'bool'>
     '''
+    return n % 2 == 0
+
+
+
+
+
+
 
 
 def factorial(n):
-    '''
+    ''' 
     Return the factorial of n.
     Recall that the factorial of n is defined to be: 1*2*3*...*(n-1)*n
 
@@ -47,6 +65,13 @@ def factorial(n):
     >>> factorial(100)
     93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
     '''
+    #accumulator pattern:
+    #define a varibale just before a for loop 
+    #modify that var in each iteration 
+    accumulator = 1 
+    for i in range(1, n+1):
+        accumulator *= 1
+    return accumulator 
 
 
 def largest(xs):
